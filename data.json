@@ -1,4 +1,7 @@
 {
+  "teststuff": {
+    "testing": "hello"
+  },
   "users": {
     "alice": {
       "roles": ["admin"],
