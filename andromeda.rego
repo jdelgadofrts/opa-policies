@@ -13,7 +13,7 @@ allow {
   # Assertions
   # User has been assigned the client from the input
   client == data.users[input.username].andromeda.clients[i]
-  # The role allows for the endpoint
+  # The role allows for the endpoint.
   data.roles[role].endpoints[i] == endpoint
 }
 
