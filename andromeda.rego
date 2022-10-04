@@ -31,3 +31,5 @@ allow {
   role := data.users[input.username].andromeda.role
   role == "super_admin"
 }
+
+pii_allowed if data.users[input.username].andromeda.role == "producer"
