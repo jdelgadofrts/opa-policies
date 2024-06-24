@@ -10,7 +10,7 @@ allow {
   endpoint := input.endpoint
   client := input.client
 
-  print("**** ghello world")
+  print("**** ghello world 0")
 
   # Assertions
   # User has been assigned the client from the input
@@ -24,12 +24,17 @@ allow {
   role := data.users[input.username].andromeda.role
   client := input.client
 
+  print("**** ghello world 1")
+
   role == "admin"
   client == data.users[input.username].andromeda.clients[i]
 }
 
 # Super admins have access to everything
 allow {
+
+  print("**** ghello world 2")
+
   role := data.users[input.username].andromeda.role
   role == "super_admin"
 }
