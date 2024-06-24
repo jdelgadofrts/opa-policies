@@ -10,6 +10,8 @@ allow {
   endpoint := input.endpoint
   client := input.client
 
+  print("**** ghello world")
+
   # Assertions
   # User has been assigned the client from the input
   client == data.users[input.username].andromeda.clients[i]
