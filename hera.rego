@@ -10,6 +10,8 @@ allow {
   permissions := data.users[input.username].hera.permissions
   endpoint_permission := data.actions[input.endpoint].permission
 
+  print("******* Found permissions", permissions)
+
   # Assertions
   endpoint_permission == permissions[i]
 }
